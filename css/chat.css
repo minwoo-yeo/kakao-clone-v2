@@ -44,6 +44,27 @@
   right: 10px;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(-50px);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+  50% {
+    transform: translateY(-60px);
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+  100% {
+    transform: translateY(-50px);
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  }
+}
+
 .chat__write {
   margin: 0 auto;
   bottom: 0px;
@@ -64,6 +85,7 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  animation: float 1s linear infinite forwards;
 }
 
 .chat__icon {
